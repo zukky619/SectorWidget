@@ -8,6 +8,12 @@ Window {
     title: qsTr("Hello World")
 
     SectorWidget {
+        width: 600
+        height: 300
         id: sectorWidgetId
+    }
+
+    Component.onCompleted: {
+        sectorWidgetId.changeRotation(30)
     }
 }
